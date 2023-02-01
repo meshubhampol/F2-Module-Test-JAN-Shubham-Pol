@@ -6,7 +6,7 @@ let text=document.getElementById('firstprompt');
 images[0].addEventListener('click',showForm);
 
 function showForm() {
-    text.classList.add('hidden');
+    text.innerHTML='';
     images[0].classList.add('unselectable');
     form.classList.remove('hidden');
 }
