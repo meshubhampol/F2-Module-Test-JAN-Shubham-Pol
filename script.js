@@ -4,6 +4,8 @@ let form = document.getElementById('form');
 images[0].addEventListener('click',showForm);
 
 function showForm() {
+    let text=document.getElementById('firstprompt');
+    text.classList.add('hidden');
     images[0].classList.add('unselectable');
     form.classList.remove('hidden');
 }
@@ -84,7 +86,8 @@ function showData() {
     images[1].classList.add('unselectable');
     images[2].classList.remove('unselectable');
     success.classList.add('hidden');
-    info.innerHTML='Name: '+ data[0].name + '<br> <br>' + 'Username: ' + data[0].username;
+    info.innerHTML='Name: '+ data[0].name + '<br> <br>' + 'Username: ' + data[0].username + 
+                '<br> <br> Click On Image 3 to Roll The Dice';
 }
 
 let promptSec=document.getElementById('prompt-section');
