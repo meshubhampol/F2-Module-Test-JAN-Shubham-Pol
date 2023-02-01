@@ -1,10 +1,11 @@
 let images = document.getElementsByTagName('img');
 let form = document.getElementById('form');
 
+let text=document.getElementById('firstprompt');
+
 images[0].addEventListener('click',showForm);
 
 function showForm() {
-    let text=document.getElementById('firstprompt');
     text.classList.add('hidden');
     images[0].classList.add('unselectable');
     form.classList.remove('hidden');
