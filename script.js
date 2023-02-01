@@ -93,6 +93,7 @@ images[2].addEventListener('click',showDice);
 
 let dice = document.getElementById('dice');
 let diceSec=document.getElementById('dice-section');
+let curRoll=document.getElementById('curRoll');
 let score=document.getElementById('score');
 let attempt=document.getElementById('attempt');
 
@@ -114,8 +115,9 @@ let success2=document.getElementById('success2');
 dice.addEventListener('click',rollDice);
 
 function rollDice() {
+    let ran;
     if(count>0) {
-        let ran=parseInt( (Math.random()*6) + 1);
+        ran=parseInt( (Math.random()*6) + 1);
         sum+=ran;
         count--;
         updateScore(ran);
@@ -142,14 +144,16 @@ function rollDice() {
         diceSec.classList.add('hidden');
         promptSec.classList.remove('hidden');
         images[2].classList.remove('unselectable');
-        attempt.innerHTML='Attempt Left: ' + count;
+        attempt.innerHTML='Rolls Left: ' + count;
         score.innerHTML='Score: ' + sum;
+        curRoll.innerHTML='Current Roll: '+ ran;
     }
 }
 
 function updateScore(ran) {
+    curRoll.innerHTML='Current Roll: '+ ran;
     score.innerHTML='Score: ' + sum;
-    attempt.innerHTML='Attempt Left: ' + count;
+    attempt.innerHTML='Rolls Left: ' + count;
     dice.classList.add('animation');
     dice.className='';
     dice.classList.add('dice' + ran);
