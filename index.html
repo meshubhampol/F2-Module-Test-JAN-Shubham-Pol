@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=4, initial-scale=1.0">
+    <title>F2 Module Test</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="img-container">
+        <div class="img1-container">
+            <img id="img1" src="http://unsplash.it/400/400" alt="">
+        </div>
+        <div class="img2-container">
+            <img class="unselectable" id="img2" src="http://unsplash.it/400/401" alt="">
+        </div>
+        <div class="img3-container">
+            <img class="unselectable" id="img3" src="http://unsplash.it/401/400" alt="">
+        </div>
+        <div class="img4-container">
+            <img class="unselectable" id="img4" src="http://unsplash.it/400/402" alt="">
+        </div>
+    </div>
+    <div class="form-section">
+        <form id="form" class="hidden">
+            <h2>Registration Form</h2>
+            <input type="text" id="name-input" placeholder="Enter Your Name"> <br> <br>
+            <div class="error"></div>
+            <input type="email" id="email-input" placeholder="Enter Your Email Id"> <br> <br>
+            <div class="error"></div>
+            <input type="text" id="username-input" placeholder="Enter Your UserName">
+            <div class="error error2"></div>
+            <button id="submit-btn">Register</button>
+        </form>
+        <h1 id="success" class="hidden">Registered successfully <br> <br> Click on second Image to see Your Data</h1>
+    </div>
+    <div class="info-section">
+        <div id="info"></div>
+    </div>
+    <div id="dice-section" class="hidden">
+        <div id="dice" class="diceRoll"></div>
+        <h1 id="score">Score: 0</h1>
+        <h1 id="attempt">Attempt Left: 3</h1>
+    </div>
+    <div id="prompt-section" class="hidden">
+        <h1>Your Score is less than 10</h1>
+        <h1>Try Again By clicking on Image 3</h1>
+    </div>
+    <div class="success-section">
+        <h1 id="success2" class="hidden">Congrats You got the score more than 10</h1>
+    </div>
+    <div id="coupon-section" class="hidden">
+        <h1 id="coupon"></h1>
+        <div id="congrats"></div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>

@@ -1,0 +1,170 @@
+* {
+    box-sizing: border-box;
+    margin-right: 0px;
+    padding-right: 0px;
+}
+
+#img-container {
+    display: flex;
+    justify-content: center;
+}
+
+img {
+    padding: 4px;
+    cursor: pointer;
+    width: 90%;
+}
+
+.unselectable {
+    cursor: none;
+    pointer-events: none;
+    user-select: none;
+}
+
+.hidden {
+    display: none;
+}
+
+.form-section {
+    display: flex;
+    justify-content: center;
+    max-width: 100%;
+    flex-wrap: nowrap;
+}
+
+form {
+    display: flex;
+    border-radius: 10px;
+    padding: 5px;
+    width: fit-content;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgb(122, 14, 229);
+}
+
+input::placeholder {
+    font-weight: 600;
+    opacity: 1 !important;
+    color: black;
+}
+
+input {
+    border: 2px solid black;
+    width: 300px;
+    padding: 10px;
+    font-weight: 600;
+    border-radius: 10px;
+}
+
+button {
+    background-color: rgba(115, 16, 229, 0.145);
+    font-weight: 600;
+    font-size: 18px;
+    margin: 20px;
+    padding: 10px;
+    width: 175px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.error {
+    position: relative;
+    top: -32px;
+    color:  #feff00;
+    font-size: 18px;
+}
+
+.error2 {
+    position: relative;
+    top: 3px;
+}
+
+h1 {
+    text-align: center;
+}
+
+#info {
+    margin-top: 50px;
+    padding: 10px;
+    text-align: center;
+    font-weight: 600;
+    font-size: 24px;
+}
+
+#dice-section {
+    text-align: center;
+}
+
+.diceRoll {
+    cursor: pointer;
+    margin: auto;
+}
+
+.dice1 {
+    content: url("https://thumbs.dreamstime.com/b/number-clean-dice-top-view-white-background-isolated-217201276.jpg");
+    width: 200px;
+    height: 200px;
+}
+
+.dice2 {
+    content: url("https://img.freepik.com/premium-photo/number-2-clean-dice-top-view_118047-6753.jpg");
+    width: 200px;
+    height: 200px;
+}
+
+.dice3 {
+    content: url("https://img.freepik.com/premium-photo/number-3-clean-dice-top-view-white-background-isolated_118047-6386.jpg?w=2000");
+    width: 200px;
+    height: 200px;
+}
+
+.dice4 {
+    content: url("https://img.freepik.com/premium-photo/number-4-clean-dice-top-view-white-background-isolated_118047-7546.jpg?w=2000");
+    width: 200px;
+    height: 200px;
+}
+
+.dice5 {
+    content: url("https://img.freepik.com/premium-photo/number-5-clean-dice-top-view_118047-6733.jpg");
+    width: 200px;
+    height: 200px;
+}
+
+.dice6 {
+    content: url("./images/dice6.jpg");
+    width: 200px;
+    height: 200px;
+}
+
+.animation {
+    animation: spin 2s;
+}
+
+@keyframes spin {
+    50% {transform: rotate(180deg);}
+}
+
+.warning {
+    font-size: 32px;
+    color: red;
+}
+
+/* .prompt-section {
+    width: fit-content;
+    display: flex;
+    justify-content: center;
+    border: 2px solid white;
+    color: black;
+    background-color:aliceblue;
+} */
+
+#congrats {
+    content: url("https://t3.ftcdn.net/jpg/01/44/89/98/360_F_144899855_tqFVpAifgNGq7Uti1XoANq0mvsg0518o.jpg");
+}
+
+.congrats-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
