@@ -10,7 +10,8 @@
 }
 
 img {
-    padding: 4px;
+    margin: 0px;
+    padding: 0px 4px;
     cursor: pointer;
     width: 90%;
 }
@@ -22,6 +23,8 @@ img {
 }
 
 .hidden {
+    margin: 0px;
+    padding: 0px;
     display: none;
 }
 
