@@ -146,7 +146,7 @@ function rollDice() {
         images[2].classList.remove('unselectable');
         attempt.innerHTML='Rolls Left: ' + count;
         score.innerHTML='Score: ' + sum;
-        curRoll.innerHTML='Current Roll: '+ ran;
+        curRoll.innerHTML='Current Roll: 0';
     }
 }
 
